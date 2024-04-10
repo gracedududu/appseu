@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class MathematicsReview extends StatefulWidget {
+class ScienceMockReview extends StatefulWidget {
   final int index;
 
-  MathematicsReview({required this.index});
+ ScienceMockReview({required this.index});
 
   @override
-  _MathematicsReviewState createState() => _MathematicsReviewState();
+  _ScienceMockReviewState createState() => _ScienceMockReviewState();
 }
 
-class _MathematicsReviewState extends State<MathematicsReview> {
+class  _ScienceMockReviewState extends State< ScienceMockReview> {
   bool showAdditionalText = false;
 
   @override
@@ -41,7 +41,7 @@ class _MathematicsReviewState extends State<MathematicsReview> {
                 children: [
                   Expanded(
                     child: Text(
-                      ' General Mathematics Test #${index + 1}',
+                      ' Science Proficiency Mock #${index + 1}',
                       style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold,),
                     ),
                   ),
@@ -58,7 +58,7 @@ class _MathematicsReviewState extends State<MathematicsReview> {
                   ),
                 ],
               ),
-              tileColor: Colors.red[100 * (index % 9 + 1)],
+              tileColor: Colors.green[100 * (index % 9 + 1)],
             );
           },
         ),
@@ -81,125 +81,125 @@ class _QuestreviewState extends State<Questreview> {
   Widget build(BuildContext context) {
     String mainText = '';
     if (widget.index == 0) {
-      mainText = '\n${widget.index + 1}.  5.75=______\n\n'
-          'A.   11/2 \n'
-          'B.   17/3 \n'
-          'C.   23/4 \n'
-          'D.   29/5 \n';
+      mainText = '\n${widget.index + 1}. In a solution the substance that does the dissolving is called.\n\n'
+          'A.        soluble  \n'
+          'B.    the solute \n'
+          'C.  the solvent  \n'
+          'D.           an ion\n';
     } else if (widget.index == 1) {
-      mainText = '\n${widget.index + 1}.  -4[8-(5-2)]-3= _____\n\n'
-          'A.  15\n'
-          'B.  17\n'
-          'C. -17\n'
-          'D. -23\n';
+      mainText = '\n${widget.index + 1}. A solution that cannot hold any more solute at room temperature would be. \n\n'
+          'A.                  a dilute solution \n'
+          'B.     a concentrated solution \n'
+          'C.            a saturated solution\n'
+          'D.  a supersaturated solution\n';
     } else if (widget.index == 2) {
-      mainText = '\n${widget.index + 1}.  Which of the following has the greatest vaue?\n\n'
-          'A.     2/3     \n'
-          'B.      5/8 \n'
-          'C.      3/4\n'
-          'D.  0.675\n';
+      mainText = '\n${widget.index + 1}.    Water is a good solvent because....\n\n'
+          'A.                 Water is a good solvent because it is a negatively charged ion.       \n'
+          'B.        Water is such a good solvent because it repels most molecules.  \n'
+          'C.         Water is such a good solvent because it is such a small molecule   \n'
+          'D.Water is a good solvent due to its polarity and small molecular size \n';
     } else if (widget.index == 3) {
-      mainText = '\n${widget.index + 1}.  If m/24 = 0.625, what is the numerical value of m?\n\n'
-          'A. 12\n'
-          'B. 13 \n'
-          'C. 14\n'
-          'D. 15\n';
+      mainText = '\n${widget.index + 1}.  Ethanol dissolved in water would be an example of. \n\n'
+          'A. a solution between two miscible liquids\n'
+          'B.    a solution between a solid and liquid \n'
+          'C.          a suspension between two liquids \n'
+          'D. ethanol and water do not form a solution\n';
     } else if (widget.index == 4) {
-      mainText = '\n${widget.index + 1}.  What is 75% of 2/3? \n\n'
-          'A.   2/3\n'
-          'B.    3/4\n'
-          'C.    1/2 \n'
-          'D.    1/3\n';
+      mainText = '\n${widget.index + 1}. To form a supersaturated solution requires.  \n\n'
+          'A. reducing the amount of solute\n'
+          'B.  reducing the amount of solute  \n'
+          'C.   reducing the amount of solute \n'
+          'D.                        none of the above\n';
     } else if (widget.index == 5) {
-      mainText = '\n${widget.index + 1}.  If a and b are both odd numbers,then which of the following must be an odd number?\n\n'
-          'A.        a + b \n'
-          'B.      ab + 1  \n'
-          'C.    2a + 4b\n'
-          'D. a + b  + 3  \n';
+      mainText = '\n${widget.index + 1}. Which one of the following is an example of a physical change? \n\n'
+          'A.                         iron rusting     \n'
+          'B.                 a steak cooking  \n'
+          'C. sugar dissolving in water\n'
+          'D.               a candle burning\n';
     } else if (widget.index == 6) {
-      mainText = '\n ${widget.index + 1}. If a jeepney ride costs P8.50 for the first four kilometers and P1.50 for each additional kilometer or fraction thereof,then how much would a passenger pay for a 12 km ride?"\n\n'
-          'A.   P10.00\n'
-          'B.   P18.00 \n'
-          'C.   P18.50     \n'
-          'D.   P20.50\n';
+      mainText = '\n ${widget.index + 1}. Which one of the following is not a physical change?  \n\n'
+          'A. clothes drying in the dryer \n'
+          'B.      making a cup of coffee \n'
+          'C.                    chopping wood   \n'
+          'D.                      boiling an egg\n';
     } else if (widget.index == 7) {
-      mainText = '\n${widget.index + 1}.  1,8,27,64,125,___?\n\n'
-          'A.      175         \n'
-          'B.      201     \n'
-          'C.      216          \n'
-          'D.      225\n';
+      mainText = '\n${widget.index + 1}.  The chemicals after a chemical change________. \n\n'
+          'A.   have properties identical to the chemicals before the change          \n'
+          'B.   have properties different to the chemicals before the change.      \n'
+          'C.                                   both A and B           \n'
+          'D.                          none of the above \n';
     } else if (widget.index == 8) {
-      mainText = '\n\n${widget.index + 1}.   (3x + 2)(4x-5)=____\n\n'
-          'A.            12x^2 - 10x  \n'
-          'B.       12x^2 + 10x -0\n'
-          'C.       12x^2 - 7x - 10\n'
-          'D.     12x^2 - 23x - 10\n';
+      mainText = '\n${widget.index + 1}.  Heptane is always composed of 84% carbon and 16% hydrogen by mass. What law does this observation Illustrate? \n\n'
+          'A.   The Law of Multiple Proportions         \n'
+          'B.    The Law of Definite Proportions   \n'
+          'C.                The Law of Conservation of Mass  \n'
+          'D.                The Law of Conservation of Energy \n';
     } else if (widget.index == 9) {
-      mainText = '\n${widget.index + 1}. What is the area of a square inscribed in a circle having a diameter of 4 cm?\n\n'
-          'A.      4 cm^2\n'
-          'B.      8 cm^2\n'
-          'C.    4π cm^2\n'
-          'D.    8π cm^2 \n';
+      mainText = '\n${widget.index + 1}.  Give the mass number for an atom that has 10 protons, 10 electrons, and 11 neutrons. \n\n'
+          'A.   31   \n'
+          'B.   20  \n'
+          'C.   10 \n'
+          'D.   21 \n';
           } else if (widget.index == 10) {
-      mainText = '\n${widget.index + 1}. A triangle has the following points as the vertices :(0,0)(3,4)(6,0). The triangle is \n\n'
-          'A.        a scalene triangle \n'
-          'B.   an isosceles triangle\n'
-          'C.              a right triangle \n'
-          'D.  an equilateral triangle\n';
+      mainText = '\n${widget.index + 1}.  Compared to a glass of ice water with ice in it, a glass of plain ice-cold water without ice on a warm day will warm up.\n\n'
+          'A.           faster\n'
+          'B.          slower\n'
+          'C.  in the same \n amount of time\n'
+          'D.  none of the\n above\n';
           } else if (widget.index == 11) {
-      mainText = '\n${widget.index + 1}.   If the sides of a quadrilateral are 8 ,14,12, and 20cm and the longest side of similar quadrilateral is 30 cm, how long is the shortest side of this quadrilateral?\n\n'
-          'A.     5 cm \n'
-          'B.   12 cm\n'
-          'C.   15 cm   \n'
-          'D.   16 cm\n';
+      mainText = '\n${widget.index + 1}.  Marinades for meat commonly include acids such as vinegar or wine, because the acids can? \n\n'
+          'A.   toughen meat   \n'
+          'B. tenderize meat\n'
+          'C.  preserve meat \n'
+          'D.  react with salt \n';
           } else if (widget.index == 12) {
-      mainText = '\n${widget.index + 1}. Simplify: 4√27x^2 x √9x^4 \n\n'
-          'A.  3x√3x\n'
-          'B.        3x\n'
-          'C.      √3x \n'
-          'D.    4√3x \n';
+      mainText = '\n${widget.index + 1}. An astronaut picks up a stone on the moon and finds its mass to be 2 kg. If the mass of the earth is 6 times more than the mass of the moon, what will the mass and the weight of the stone be on the earth? \n\n'
+          'A.     2 kg. 12N\n'
+          'B.       2kg, 20N \n'
+          'C.  12kg, 120 N  \n'
+          'D.  20kg, 200 N  \n';
           } else if (widget.index == 13) {
-      mainText = '\n${widget.index + 1}.  What is the remainder when 2x^4 - x^3 + 3x -1 is divided by x + 2? \n\n'
-          'A.    0\n'
-          'B.    2\n'
-          'C.   -2\n'
-          'D.  33\n';
+      mainText = '\n${widget.index + 1}. Water is boiled in a flask with a balloon over the top. As the water heats, the balloon expands. What has happened to the weight of this flask and balloon in this experiment? \n\n'
+          'A. It has increased as the balloon expands. \n'
+          'B.   It has decreased as the water boiled away. \n'
+          'C.              It has stayed the same. \n'
+          'D. It is unpredictable because the balloon is flexible. \n';
           } else if (widget.index == 14) {
-      mainText = '\n${widget.index + 1}. Find the fourth term of the arithmetic progression x,y,2y - x,...\n\n'
-          'A.       2x - y\n'
-          'B.       3x - y \n'
-          'C.     3y - 2x   \n'
-          'D.      2x- 3y \n';
+      mainText = '\n${widget.index + 1}. A student wishes to find the density of an irregular piece of rock. How will she find volume?\n\n'
+          'A.     length x width x height   \n'
+          'B.   place it on a triple beam balance  \n'
+          'C.                put it in a beaker   \n'
+          'D.   use water displacement   \n';
           } else if (widget.index == 15) {
-      mainText = '\n${widget.index + 1}. If x = y + 4 and 20 - y , then what is the value of x^2 - y^2? \n\n'
-          'A.  24\n'
-          'B.  80\n'
-          'C.  16 \n'
-          'D.    5 \n';
+      mainText = '\n${widget.index + 1}. A barge filled with scrap iron is in a canal lock. If the barge were to sink what would happen to the water level?  \n\n'
+          'A.                                 It would fall \n'
+          'B.      It would remain unchanged\n'
+          'C.                                It would rise \n'
+          'D.  It would depend on its mass. \n';
           } else if (widget.index == 16) {
-      mainText = '\n${widget.index + 1}.  if y is an integer and \n y + 3 > 0, what is the last possible value of y?\n\n '
-          'A.   -3\n'
-          'B.  -2\n'
-          'C.  -1\n'
-          'D.   2\n';
+      mainText = '\n${widget.index + 1}. Are protozoa with no means of locomotion.\n\n '
+          'A.      Amoeboids \n'
+          'B.             Ciliates \n'
+          'C. Zooflagellates \n'
+          'D.         Sporozoa\n';
           } else if (widget.index == 17) {
-      mainText = '\n${widget.index + 1}. If the reciprocal of x + 1 is x- 1 , then what is x? \n\n'
-          'A.  +√2 , -√2\n'
-          'B.             √2 \n'
-          'C.               0 \n'
-          'D.               2\n';
+      mainText = '\n${widget.index + 1}.  The vertebrate skeleton. \n\n'
+          'A. is a living tissue which grows with the animal.\n'
+          'B.         protects internal organs.          \n'
+          'C.                 serves as a place of attachment for muscles.  \n'
+          'D.                         all of the above      \n';
           } else if (widget.index == 18) {
-      mainText = '\n${widget.index + 1}. If the ratio of x to y is 3:7; what is the ratio of x + y to x ? \n\n'
-          'A.  3:10\n'
-          'B.  7:10 \n'
-          'C.  10:3   \n'
-          'D.  10:7 \n';
+      mainText = '\n${widget.index + 1}. Protoplasts are cells without? \n\n'
+          'A.      a nucleus. \n'
+          'B. a membrane. \n'
+          'C.             a wall.\n'
+          'D.     cytoplasm.\n';
           } else if (widget.index == 19) {
-      mainText = '\n${widget.index + 1}. If xy + yz + xz = -10 and xyz = 8, then 1/x + 1/y + 1/z = _____.\n\n'
-          'A.    -80\n'
-          'B.   -5/4 \n'
-          'C.   -4/5    \n'
-          'D.    4/5 \n';
+      mainText = '\n${widget.index + 1}.  During the chromosomes attach to the spindle and align at the metaphase plate of the spindle. \n\n'
+          'A.          prophase \n'
+          'B.  prometaphase \n'
+          'C.        metaphase \n'
+          'D.          anaphase  \n';
     } else {
       mainText = 'This is the College Quest Review page.';
     }
@@ -208,12 +208,12 @@ class _QuestreviewState extends State<Questreview> {
        title: Row(
       children: [
         Text(
-          ' General Mathematics Test',
+          ' Science Proficiency Mock',
           style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
         ),
         SizedBox(width: 10), // Add some space between the text and image
         Image.asset(
-        'lib/design 4.png',
+        'lib/design 2.png',
           height: 50, // Specify the height of the image
           width: 50, // Specify the width of the image
         ),
@@ -230,7 +230,7 @@ class _QuestreviewState extends State<Questreview> {
               child: Text(
                 mainText,
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 25.0),
+                style: TextStyle(fontSize: 23.0),
               ),
             ),
           ),
@@ -248,7 +248,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'C.  23/4 \n\n'
+                    'C. the solvent  \n\n'
                 ,
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
@@ -260,7 +260,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'D. -23 \n\n'
+                    'C. a saturated solution \n\n'
                     ,
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
@@ -272,7 +272,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'C. 3/4 \n\n'
+                    'D. Water is a good solvent due to its polarity and small molecular size \n\n'
                    ,
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
@@ -284,7 +284,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'D. 15 \n\n'
+                    'A. a solution between two miscible liquids \n\n'
                    ,
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
@@ -296,7 +296,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'C. 1/2 \n\n'
+                    'C. reducing the amount of solute \n\n'
                  ,
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
@@ -308,7 +308,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'D.   a + b + 3 \n\n',
+                    'C. sugar dissolving in water \n\n',
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                   ),
@@ -319,7 +319,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'D. P20.50\n\n',
+                    'D. boiling an egg \n\n',
             
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
@@ -331,7 +331,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'C. 216 \n\n',
+                    'B. have properties different to thechemicals before the change \n\n',
                 
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
@@ -344,7 +344,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    ' C. 12x^2 - 7x - 10 \n\n',                  
+                    ' B. The Law of Definite Proportions \n\n',                  
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                   ),
@@ -355,7 +355,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'B. 8 cm^2 \n\n',                
+                    'D. 21 \n\n',                
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                   ),
@@ -366,7 +366,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'B. an isosceles triangle \n\n',                
+                    'A. faster \n\n',                
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                   ),
@@ -377,7 +377,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'B. 12\n\n',                
+                    'B. tenderize meat\n\n',                
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                   ),
@@ -388,7 +388,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'B. 3x \n\n',                
+                    'B. 2kg,20N\n\n',                
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                   ),
@@ -399,7 +399,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'D. 33\n\n',                
+                    'C. It has stayed the same\n\n',                
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                   ),
@@ -410,7 +410,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'C. 3y - 2x \n\n',                
+                    'D. use water displacement \n\n',                
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                   ),
@@ -421,7 +421,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'B. 80\n\n',                
+                    'A. It would fall ',                
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                   ),
@@ -432,7 +432,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'B. -2 \n\n',                
+                    'D. Sporozoa \n\n',                
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                   ),
@@ -443,7 +443,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'A. +√2,-√2 \n\n',                
+                    'D. all of the above \n\n',                
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                   ),
@@ -454,7 +454,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'C. 10:3 \n\n',                
+                    'C. a wall \n\n',                
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                   ),
@@ -465,7 +465,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'B. -5/4 \n\n',                
+                    'C. metaphase\n\n',                
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                   ),

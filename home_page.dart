@@ -3,11 +3,15 @@ import 'navigation_drawer.dart';
 import 'english_mock.dart';
 import 'Language.dart';
 import 'mathematics.dart';
+import 'science_mock.dart';
+import 'ICT.dart';
+import 'ARTS.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
+
 
 class _MyHomePageState extends State<MyHomePage> {
   bool isSecondPageVisible = false;
@@ -26,11 +30,11 @@ class _MyHomePageState extends State<MyHomePage> {
           SizedBox(height: 8.5),
           Container(
             decoration: BoxDecoration(
-              color:  Color.fromARGB(255, 246, 246, 149),
+              color:  Color.fromARGB(255, 209, 209, 206),
               borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(
-                  color: Color.fromARGB(255, 150, 147, 147).withOpacity(0.4),
+                  color: Color.fromARGB(255, 194, 191, 191).withOpacity(0.4),
                   spreadRadius: 5,
                   blurRadius: 7,
                   offset: Offset(0, 3),
@@ -132,8 +136,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       color: Color.fromARGB(255, 237, 202, 174),
                       borderRadius: BorderRadius.circular(20),
                       border: Border.all(color: Colors.black),
-                    ),
-                    
+                    ),                                      
                     child: Stack(
                         alignment: Alignment.center,
                         children: [
@@ -271,18 +274,16 @@ class _MyHomePageState extends State<MyHomePage> {
           SizedBox(height: 20),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 20),
-            child: Column(
-          children: [
-            SizedBox(height: 0),
-            Row(
+            child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
+              children: [         
                 Expanded(
-                  child: GestureDetector(
+                   child: GestureDetector(
                     onTap: () {
+                      // Navigate to the next page when English Mock is tapped
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => EnglishMockReview(index: 0)),
+                        MaterialPageRoute(builder: (context) => MathematicsReview(index: 0)),
                       );
                     },
                   child: Container(
@@ -312,13 +313,21 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                             ),
                           ),
-                        ]
+                      ]
                     ),
                   ),
                 ),
               ),
                 SizedBox(width: 20),
                 Expanded(
+                   child: GestureDetector(
+                    onTap: () {
+                      // Navigate to the next page when English Mock is tapped
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ScienceMockReview(index: 0)),
+                      );
+                    },
                   child: Container(
                     height: 150,
                     decoration: BoxDecoration(
@@ -350,17 +359,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
+                ),
               ],
             ),
-          
-      
+          ),
           SizedBox(height: 20),
-        
         ],
       ),
     );
   }
-
   Widget _buildSecondPage() {
     return Expanded(
       child: Padding(
@@ -531,6 +538,13 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Expanded(
+                   child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) =>ICTReview(index: 0)),
+                      );
+                    },
                   child: Container(
                     height: 150,
                     decoration: BoxDecoration(
@@ -550,7 +564,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           Positioned(
                             bottom: 10,
                             child: Text(
-                              'ICT',
+                              'IT Test',
                               style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
@@ -561,9 +575,18 @@ class _MyHomePageState extends State<MyHomePage> {
                         ]
                     ),
                   ),
+                 ),
                 ),
                 SizedBox(width: 20),
                 Expanded(
+                   child: GestureDetector(
+                    onTap: () {
+                      // Navigate to the next page when English Mock is tapped
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ArtsReview(index: 0)),
+                      );
+                    },
                   child: Container(
                     height: 150,
                     decoration: BoxDecoration(
@@ -594,6 +617,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                   ),
+                ),
                 ),
               ],
             ),
