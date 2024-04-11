@@ -42,7 +42,7 @@ class _ICTReviewState extends State<ICTReview> {
                   Expanded(
                     child: Text(
                       ' Information Technology Test #${index + 1}',
-                      style: TextStyle(fontSize: 15.5,fontWeight: FontWeight.bold,),
+                      style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold,),
                     ),
                   ),
                   ElevatedButton(
@@ -80,93 +80,93 @@ class _QuestreviewState extends State<Questreview> {
     String mainText = '';
     if (widget.index == 0) {
       mainText = '\n${widget.index + 1}.  What does CPU stand for?\n\n'
-          'A.   Central Processing Unit \n'
-          'B.   Central Process Unit \n'
-          'C.   Computer Personal Unit \n'
-          'D.   Central Processor Unit \n';
+          'A.  Central Processing Unit \n'
+          'B.        Central Process Unit \n'
+          'C.  Computer Personal Unit \n'
+          'D.    Central Processor Unit \n';
     } else if (widget.index == 1) {
       mainText = '\n${widget.index + 1}.  Which of the following is not an input device?\n\n'
-          'A.  Mouse\n'
+          'A.      Mouse\n'
           'B.  Keyboard\n'
-          'C.  Monitor\n'
-          'D.  Printer\n';
+          'C.     Monitor\n'
+          'D.       Printer\n';
     } else if (widget.index == 2) {
       mainText = '\n${widget.index + 1}.  What does HTML stand for?\n\n'
           'A.  HyperText Markup Language\n'
-          'B.  HighTech Markup Language\n'
+          'B.    HighTech Markup Language\n'
           'C.  HyperTech Markup Language\n'
-          'D.  HyperText Model Language\n';
+          'D.     HyperText Model Language\n';
     } else if (widget.index == 3) {
       mainText = '\n${widget.index + 1}.  Which programming language is developed by Sun Microsystems?\n\n'
           'A.  Python\n'
-          'B.  C++\n'
-          'C.  Java\n'
-          'D.  Ruby\n';
+          'B.       C++\n'
+          'C.      Java\n'
+          'D.      Ruby\n';
     } else if (widget.index == 4) {
       mainText = '\n${widget.index + 1}.  What does CSS stand for?\n\n'
           'A.  Computer Style Sheets\n'
-          'B.  Cascading Style Sheets\n'
-          'C.  Creative Style Sheets\n'
-          'D.  Colorful Style Sheets\n';
+          'B. Cascading Style Sheets\n'
+          'C.     Creative Style Sheets\n'
+          'D.     Colorful Style Sheets\n';
     } else if (widget.index == 5) {
       mainText = '\n${widget.index + 1}.  What is the full form of URL?\n\n'
           'A.  Universal Resource Locator\n'
-          'B.  Uniform Resource Locator\n'
-          'C.  Unified Resource Locator\n'
-          'D.  Unique Resource Locator\n';
+          'B.    Uniform Resource Locator\n'
+          'C.      Unified Resource Locator\n'
+          'D.      Unique Resource Locator\n';
     } else if (widget.index == 6) {
       mainText = '\n${widget.index + 1}.  Which protocol is used to send email?\n\n'
           'A.  SMTP\n'
-          'B.  POP\n'
-          'C.  HTTP\n'
-          'D.  FTP\n';
+          'B.     POP\n'
+          'C.   HTTP\n'
+          'D.      FTP\n';
     } else if (widget.index == 7) {
       mainText = '\n${widget.index + 1}.  What does LAN stand for?\n\n'
-          'A.  Local Area Network\n'
-          'B.  Large Area Network\n'
+          'A.     Local Area Network\n'
+          'B.     Large Area Network\n'
           'C.  Logical Area Network\n'
-          'D.  Low Area Network\n';
+          'D.       Low Area Network\n';
     } else if (widget.index == 8) {
       mainText = '\n${widget.index + 1}.  Which company developed the Android operating system?\n\n'
-          'A.  Apple\n'
+          'A.         Apple\n'
           'B.  Microsoft\n'
-          'C.  Google\n'
-          'D.  Samsung\n';
+          'C.       Google\n'
+          'D.   Samsung\n';
     } else if (widget.index == 9) {
       mainText = '\n${widget.index + 1}.  What is the purpose of a firewall in a computer network?\n\n'
-          'A.  To block unauthorized access\n'
-          'B.  To speed up internet connection\n'
-          'C.  To store backup data\n'
-          'D.  To increase computer performance\n';
+          'A.        To block \nunauthorized access\n'
+          'B.  To speed up\n internet connection\n'
+          'C.         To store \nbackup data\n'
+          'D.   To increase \ncomputer performance\n';
     } else if (widget.index == 10) {
       mainText = '\n${widget.index + 1}. What does ICT stand for?\n\n'
-          'A. International Computer Technology\n'
-          'B. Information and Communication Technology\n'
-          'C. Internet Connection Tools\n'
+          'A.               International \nComputer Technology\n'
+          'B.           Information and Communication Technology\n'
+          'C.    Internet Connection \nTools\n'
           'D. Intelligent Computing Techniques\n';
            } else if (widget.index == 11) {
       mainText = '\n${widget.index + 1}. What does the acronym "GUI" stand for?\n\n'
           'A. Graphical User Interface\n'
-          'B. General User Interface\n'
-          'C. Graphic Understanding Interface\n'
-          'D. Grouped User Interface\n';
+          'B.    General User Interface\n'
+          'C.   Graphic Understanding Interface\n'
+          'D.   Grouped User Interface\n';
           } else if (widget.index == 12) {
       mainText = '\n${widget.index + 1}. Which of the following programming languages is not object-oriented?\n\n'
-          'A. Java\n'
+          'A.     Java\n'
           'B. Python\n'
-          'C. C++\n'
+          'C.      C++\n'
           'D. Fortran\n';
           } else if (widget.index == 13) {
       mainText = '\n${widget.index + 1}. What protocol is used for transferring files over the Internet?\n\n'
-          'A. HTTP\n'
-          'B. FTP\n'
-          'C. SMTP\n'
+          'A.   HTTP\n'
+          'B.      FTP\n'
+          'C.   SMTP\n'
           'D. TCP/IP\n';
            } else if (widget.index == 14) {
       mainText = '\n${widget.index + 1}. What does DNS stand for in the context of computer networks?\n\n'
-          'A. Domain Network Service\n'
-          'B. Dynamic Naming System\n'
-          'C. Domain Name System\n'
+          'A.     Domain Network Service\n'
+          'B.    Dynamic Naming System\n'
+          'C.         Domain Name System\n'
           'D. Distributed Network Server\n';   
     }else {
       mainText = 'This is the ICT Test Review page.';
@@ -177,7 +177,7 @@ class _QuestreviewState extends State<Questreview> {
       children: [
         Text(
           ' Information Technology Test',
-          style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),
+          style: TextStyle(fontWeight: FontWeight.bold,fontSize: 19),
         ),
         SizedBox(width: 10), // Add some space between the text and image
         Image.asset(
@@ -376,12 +376,46 @@ style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
-      ],
-    ],
-  ),
-);
- }
+      Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    if (widget.index > 0) {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => Questreview(index: widget.index - 1)),
+                      );
+                    }
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.grey, // Change background color
+                    textStyle: TextStyle(color: Colors.white), // Change text color
+                  ),
+                  child: Text('Back', style: TextStyle(fontSize: 16)),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    if (widget.index < 14) {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => Questreview(index: widget.index + 1)),
+                      );
+                    }
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.grey, // Change background color
+                    textStyle: TextStyle(color: Colors.white), // Change text color
+                  ),
+                  child: Text('Next', style: TextStyle(fontSize: 16)),
+                ),
+              ],
+            ),
+          ],
+        ],
+      ),
+    );
+  }
 }
-
 
 

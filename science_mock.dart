@@ -230,7 +230,7 @@ class _QuestreviewState extends State<Questreview> {
               child: Text(
                 mainText,
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 23.0),
+                style: TextStyle(fontSize: 24.0),
               ),
             ),
           ),
@@ -331,7 +331,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'B. have properties different to thechemicals before the change \n\n',
+                    'B. have properties different to the chemicals before the change \n\n',
                 
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
@@ -421,7 +421,7 @@ class _QuestreviewState extends State<Questreview> {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    'A. It would fall ',                
+                    'A. It would fall \n\n',                
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                   ),
@@ -471,6 +471,41 @@ class _QuestreviewState extends State<Questreview> {
                   ),
                 ),              
               ),
+           Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    if (widget.index > 0) {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => Questreview(index: widget.index - 1)),
+                      );
+                    }
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.grey, // Change background color
+                    textStyle: TextStyle(color: Colors.white), // Change text color
+                  ),
+                  child: Text('Back', style: TextStyle(fontSize: 16)),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    if (widget.index < 19) {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => Questreview(index: widget.index + 1)),
+                      );
+                    }
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.grey, // Change background color
+                    textStyle: TextStyle(color: Colors.white), // Change text color
+                  ),
+                  child: Text('Next', style: TextStyle(fontSize: 16)),
+                ),
+              ],
+            ),
           ],
         ],
       ),

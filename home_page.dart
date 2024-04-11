@@ -6,6 +6,8 @@ import 'mathematics.dart';
 import 'science_mock.dart';
 import 'ICT.dart';
 import 'ARTS.dart';
+import 'logical.dart';
+import 'critical_thinking.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -30,11 +32,11 @@ class _MyHomePageState extends State<MyHomePage> {
           SizedBox(height: 8.5),
           Container(
             decoration: BoxDecoration(
-              color:  Color.fromARGB(255, 209, 209, 206),
+              color:  Color.fromARGB(255, 231, 231, 227),
               borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(
-                  color: Color.fromARGB(255, 194, 191, 191).withOpacity(0.4),
+                  color: Color.fromARGB(255, 120, 119, 117).withOpacity(0.4),
                   spreadRadius: 5,
                   blurRadius: 7,
                   offset: Offset(0, 3),
@@ -42,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
             height: 125,
-            width: 350,
+            width: 370,
             child: Stack(
               alignment: Alignment.bottomLeft,
               children: [
@@ -64,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Text(
                     'This is your path to excelling in Entrance Exams!',
                     style: TextStyle(
-                      fontSize: 14,
+                      fontSize: 15,
                       color: Colors.black,
                     ),
                   ),
@@ -75,13 +77,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Image.asset(
                     'lib/hi 2.png',
                     height: 120, // Specify the height of the image
-                    width: 150, // Specify the width of the image
+                    width: 160, // Specify the width of the image
                   ),
                 ),
               ],
             ),
           ),
-          SizedBox(height: 20),
+          SizedBox(height: 30),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -93,15 +95,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 child: Icon(Icons.arrow_back_ios),
               ),
-              SizedBox(width: 10),
+              SizedBox(width: 30),
               Text(
                 'Explore Courses',
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(width: 10),
+              SizedBox(width: 30),
               GestureDetector(
                 onTap: () {
                   setState(() {
@@ -112,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ],
           ),
-          SizedBox(height: 12.5),
+          SizedBox(height: 20),
           if (!isSecondPageVisible) _buildFirstPageContent(),
           if (isSecondPageVisible) _buildSecondPage(),
         ],
@@ -467,6 +469,13 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Expanded(
+                    child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LogicalReview(index: 0)),
+                      );
+                    },
                   child: Container(
                     height: 150,
                     decoration: BoxDecoration(
@@ -498,8 +507,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
+              ),
                 SizedBox(width: 20),
                 Expanded(
+                    child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Critical_thinkingReview(index: 0)),
+                      );
+                    },
                   child: Container(
                     height: 150,
                     decoration: BoxDecoration(
@@ -531,6 +548,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
+              ),
               ],
             ),
             SizedBox(height: 20),

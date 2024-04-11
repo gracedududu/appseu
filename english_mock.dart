@@ -332,6 +332,42 @@ class _QuestreviewState extends State<Questreview> {
                   ),
                 ),              
               ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    if (widget.index > 0) {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => Questreview(index: widget.index - 1)),
+                      );
+                    }
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color.fromARGB(255, 206, 203, 203), // Change background color
+                    textStyle: TextStyle(color: Colors.white), // Change text color
+                  ),
+                  child: Text('Back', style: TextStyle(fontSize: 16)),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    if (widget.index < 9) {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => Questreview(index: widget.index + 1)),
+                      );
+                    }
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color.fromARGB(255, 206, 203, 203), // Change background color
+                    textStyle: TextStyle(color: const Color.fromARGB(255, 255, 251, 251)), // Change text color
+                  ),
+                  child: Text('Next ', style: TextStyle(fontSize: 16)),
+                
+                ),
+              ],
+            ),
           ],
         ],
       ),
