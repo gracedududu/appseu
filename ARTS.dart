@@ -42,7 +42,7 @@ class _ArtsReviewState extends State<ArtsReview> {
                   Expanded(
                     child: Text(
                       'Arts & Humanities Review #${index + 1}',
-                      style: TextStyle(fontSize: 17.5,fontWeight: FontWeight.bold,),
+                      style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,),
                     ),
                   ),
                   ElevatedButton(

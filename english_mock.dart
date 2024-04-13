@@ -145,10 +145,10 @@ class _QuestreviewState extends State<Questreview> {
           'D.          To accept reluctantly\n';
     } else if (widget.index == 6) {
       mainText = '\n${widget.index + 1}. Choose the word that means "lack of interest or concern."\n\n'
-          'A.        Apathy\n'
-          'B.             Zeal\n'
-          'C.        Alacrity\n'
-          'D. Enthusiasm\n';
+          'A.         Apathy\n'
+          'B.              Zeal\n'
+          'C.         Alacrity\n'
+          'D.  Enthusiasm\n';
     } else if (widget.index == 7) {
       mainText = '\n${widget.index + 1}. Choose the word that makes it wrong . The movie "was so bored" that "most of the audience" left "before it ended".\n\n'
           'A.                      was so bored\n'
@@ -345,7 +345,7 @@ class _QuestreviewState extends State<Questreview> {
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 206, 203, 203), // Change background color
+                    backgroundColor: Color.fromARGB(255, 220, 216, 216), // Change background color
                     textStyle: TextStyle(color: Colors.white), // Change text color
                   ),
                   child: Text('Back', style: TextStyle(fontSize: 16)),
@@ -360,7 +360,7 @@ class _QuestreviewState extends State<Questreview> {
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 206, 203, 203), // Change background color
+                    backgroundColor: Color.fromARGB(255, 237, 234, 234), // Change background color
                     textStyle: TextStyle(color: const Color.fromARGB(255, 255, 251, 251)), // Change text color
                   ),
                   child: Text('Next ', style: TextStyle(fontSize: 16)),

@@ -8,6 +8,9 @@ import 'ICT.dart';
 import 'ARTS.dart';
 import 'logical.dart';
 import 'critical_thinking.dart';
+import 'Deductive.dart';
+import 'Inductive.dart';
+import 'Logical_reasoning.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -132,6 +135,14 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Expanded(
+                    child: GestureDetector(
+                    onTap: () {
+                      // Navigate to the next page when English Mock is tapped
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LogicalreasoningReview(index: 0)),
+                      );
+                    },
                   child: Container(
                     height: 150,
                     decoration: BoxDecoration(
@@ -151,7 +162,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           Positioned(
                             bottom: 10,
                             child: Text(
-                              'Aptitude Test',
+                              'Abstract Test',
                               style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
@@ -162,6 +173,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ]
                     ),
                   ),
+                ),
                 ),
                 SizedBox(width: 20),
                 Expanded(
@@ -206,6 +218,14 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Expanded(
+                   child: GestureDetector(
+                    onTap: () {
+                      // Navigate to the next page when English Mock is tapped
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DeductiveReview(index: 0)),
+                      );
+                    },
                   child: Container(
                     height: 150,
                     decoration: BoxDecoration(
@@ -237,8 +257,17 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
+                ),
                 SizedBox(width: 20),
                 Expanded(
+                   child: GestureDetector(
+                    onTap: () {
+                      // Navigate to the next page when English Mock is tapped
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => InductiveReview(index: 0)),
+                      );
+                    },
                   child: Container(
                     height: 150,
                     decoration: BoxDecoration(
@@ -269,6 +298,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                   ),
+                ),
                 ),
               ],
             ),

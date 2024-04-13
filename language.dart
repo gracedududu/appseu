@@ -52,7 +52,7 @@ class _LanguageReviewState extends State<LanguageReview> {
                     Expanded(
                       child: Text(
                         'Language Proficiency Test #${index + 1}',
-                        style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold,),
+                        style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,),
                       ),
                     ),
                     ElevatedButton(
