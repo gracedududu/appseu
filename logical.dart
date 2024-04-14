@@ -190,20 +190,21 @@ class _QuestreviewState extends State<Questreview> {
       ],
     ),
   ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Center(
-              child: Text(
-                mainText,
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 22.0),
-              ),
+      body: SingleChildScrollView(
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(
+            child: Text(
+              mainText,
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 25.0),
             ),
           ),
+        ),      
           if (widget.index == 0 || widget.index == 1|| widget.index == 2|| widget.index == 3|| widget.index == 4|| widget.index == 5|| widget.index == 6|| widget.index == 7|| widget.index == 8|| widget.index == 9||widget.index == 10 || widget.index == 11|| widget.index == 12|| widget.index == 13|| widget.index == 14) ...[
             ElevatedButton(
               onPressed: () {
@@ -319,7 +320,7 @@ if (showAdditionalText && widget.index == 9)
       child: Text(
         'C. 18 feet\n\n The perimeter of a rectangle is given by the formula P = 2(length + width). Given that the length is 8 feet and the width is 1/3 of the length, the width is 8 feet * 1/3 = 8/3 feet. So, the perimeter is P = 2(8 + 8/3) = 2(24/3 + 8/3) = 2(32/3) = 64/3 = 21.33 feet.\n\n',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 19.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -330,7 +331,7 @@ if (showAdditionalText && widget.index == 10)
       child: Text(
         'D. 18 and 30\n\n The least common multiple (LCM) of 6 and 15 is the smallest number that both 6 and 15 divide into evenly. The prime factorization of 6 is 2 * 3, and the prime factorization of 15 is 3 * 5. The LCM is the product of all prime factors with the greatest exponent: 2 * 3 * 5 = 30. The factors of 6 are 1, 2, 3, and 6, and the factors of 30 are 1, 2, 3, 5, 6, 10, 15, and 30. The common factors are 1, 2, 3, and 6, so the greatest common factor is 6.\n\n',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -415,6 +416,7 @@ if (showAdditionalText && widget.index == 14)
             ),
           ],
         ],
+      ),
       ),
     );
   }

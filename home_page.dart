@@ -11,6 +11,7 @@ import 'critical_thinking.dart';
 import 'Deductive.dart';
 import 'Inductive.dart';
 import 'Logical_reasoning.dart';
+import 'Numerical.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -134,7 +135,15 @@ class _MyHomePageState extends State<MyHomePage> {
             child:Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Expanded(
+                Expanded(  
+                   child: GestureDetector(
+                    onTap: () {
+                      // Navigate to the next page when English Mock is tapped
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LogicalreasoningReview(index: 0)),
+                      );
+                    },
                     child: GestureDetector(
                     onTap: () {
                       // Navigate to the next page when English Mock is tapped
@@ -175,8 +184,17 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 ),
+                ),
                 SizedBox(width: 20),
                 Expanded(
+                   child: GestureDetector(
+                    onTap: () {
+                      // Navigate to the next page when English Mock is tapped
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) =>NumericalReview(index: 0)),
+                      );
+                    },
                   child: Container(
                     height: 150,
                     decoration: BoxDecoration(
@@ -208,6 +226,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
+              ),
               ],
             ),
           ),

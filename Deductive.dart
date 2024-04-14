@@ -188,20 +188,22 @@ class _QuestreviewState extends State<Questreview> {
       ],
     ),
   ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Center(
-              child: Text(
-                mainText,
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 23.0),
-              ),
+  
+    body: SingleChildScrollView(
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(
+            child: Text(
+              mainText,
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 25.0),
             ),
           ),
+        ),      
           if (widget.index == 0 || widget.index == 1|| widget.index == 2 || widget.index == 3 || widget.index == 4 || widget.index == 5 || widget.index == 6 || widget.index == 7 || widget.index == 8 || widget.index == 9|| widget.index == 10|| widget.index == 11 || widget.index == 12 || widget.index == 13 || widget.index == 14 ) ...[
             ElevatedButton(
               onPressed: () {
@@ -240,7 +242,7 @@ if (showAdditionalText && widget.index == 2)
       child: Text(
         'A. Maria is not in the Engineering program.\n\nExplanation: Since all students in the Engineering program are required to take Physics, and Maria is not taking Physics, it must be true that Maria is not in the Engineering program.',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -273,7 +275,7 @@ if (showAdditionalText && widget.index == 5)
       child: Text(
         'A. Juan is not majoring in Computer Science.\n\nExplanation: Since all students who are majoring in Computer Science must take Programming, and Juan is not taking Programming, it must be true that Juan is not majoring in Computer Science.',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -317,7 +319,7 @@ if (showAdditionalText && widget.index == 9)
       child: Text(
         'A. Juan is not majoring in Business Administration.\n\nExplanation: Since all students who major in Business Administration must take Accounting, and Juan is not taking Accounting, it must be true that Juan is not majoring in Business Administration.',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -328,7 +330,7 @@ if (showAdditionalText && widget.index == 10)
       child: Text(
         'A. Maria is not majoring in Literature.\n\nExplanation: Since all students who major in Literature must take a Creative Writing course, and Maria is not taking Creative Writing, it must be true that Maria is not majoring in Literature.',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -350,7 +352,7 @@ if (showAdditionalText && widget.index == 12)
       child: Text(
         'A. Maria is not majoring in Environmental Science.\n\nExplanation: Since all students who major in Environmental Science must take a course on Ecology, and Maria is not taking Ecology, it must be true that Maria is not majoring in Environmental Science.',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -361,7 +363,7 @@ if (showAdditionalText && widget.index == 13)
       child: Text(
         'A. Juan is not majoring in Mathematics.\n\nExplanation: Since all students who major in Mathematics must take a course on Abstract Algebra, and Juan is not taking Abstract Algebra, it must be true that Juan is not majoring in Mathematics.',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -372,7 +374,7 @@ if (showAdditionalText && widget.index == 14)
       child: Text(
         'A. Maria is not majoring in Sociology.\n\nExplanation: Since all students who major in Sociology must take a course on Social Research Methods, and Maria is not taking Social Research Methods, it must be true that Maria is not majoring in Sociology.',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -415,6 +417,7 @@ if (showAdditionalText && widget.index == 14)
           ],
         ],
       ),
+    ),
     );
   }
 }

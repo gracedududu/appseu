@@ -205,20 +205,21 @@ class _QuestreviewState extends State<Questreview> {
       ],
     ),
   ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Center(
-              child: Text(
-                mainText,
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 21.0),
-              ),
+     body: SingleChildScrollView(
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(
+            child: Text(
+              mainText,
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 25.0),
             ),
           ),
+        ),      
           if (widget.index == 0 || widget.index == 1|| widget.index == 2|| widget.index == 3|| widget.index == 4|| widget.index == 5|| widget.index == 6|| widget.index == 7|| widget.index == 8|| widget.index == 9||widget.index == 10 || widget.index == 11|| widget.index == 12|| widget.index == 13|| widget.index == 14) ...[
             ElevatedButton(
               onPressed: () {
@@ -246,7 +247,7 @@ if (showAdditionalText && widget.index == 1)
       child: Text(
         'B. 4 hours\n\nThe two trains are moving towards each other, so their combined speed is the sum of their individual speeds. The combined speed is 60 km/h + 80 km/h = 140 km/h. To find the time it takes for the trains to be 500 km apart, you divide the distance by the combined speed: 500 km ÷ 140 km/h = 3.57 hours. Rounded to the nearest hour, it takes approximately 4 hours.\n\n',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -257,7 +258,7 @@ if (showAdditionalText && widget.index == 2)
       child: Text(
         'A. It emphasizes the importance of consistency and perseverance.\n\nSuccess is often achieved through consistent effort over time. By repeatedly making small efforts, individuals can make significant progress towards their goals.\n\n',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -279,7 +280,7 @@ if (showAdditionalText && widget.index == 4)
       child: Text(
         'A. The argument is well-supported and logically sound.\n\nIn the passage, the author presents a clear argument supported by evidence and logical reasoning. \n\n',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -291,7 +292,7 @@ if (showAdditionalText && widget.index == 5)
       child: Text(
         'A. All of the above\n\nPhotosynthesis is the process by which plants convert light energy into chemical energy, producing oxygen and glucose as byproducts. \n\n',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -302,7 +303,7 @@ if (showAdditionalText && widget.index == 6)
       child: Text(
         'C. Both options have ethical implications and potential consequences.',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -313,7 +314,7 @@ if (showAdditionalText && widget.index == 7)
       child: Text(
         'D. All of the above\n\nAddressing traffic congestion in urban areas requires a multifaceted approach that considers sustainability, efficiency, and public safety. \n\n',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -325,7 +326,7 @@ if (showAdditionalText && widget.index == 8)
       child: Text(
         'D. All of the above\n\n EDSA Revolution, was a series of nonviolent protests in 1986 that led to the ousting of President Ferdinand Marcos and the restoration of democratic governance. \n\n',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -336,7 +337,7 @@ if (showAdditionalText && widget.index == 9)
       child: Text(
         'D. All of the above\n\nGlobalization has had a profound impact on the Philippine economy, presenting both opportunities and challenges across various sectors. \n\n',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -347,7 +348,7 @@ if (showAdditionalText && widget.index == 10)
       child: Text(
         'D. All of the above\n\nMainstream media plays a significant role in shaping perceptions of Filipino culture.',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -358,7 +359,7 @@ if (showAdditionalText && widget.index == 11)
       child: Text(
         'D. All of the above\n\n',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -369,7 +370,7 @@ if (showAdditionalText && widget.index == 12)
       child: Text(
         'D. All of the above',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -380,7 +381,7 @@ if (showAdditionalText && widget.index == 13)
       child: Text(
         'D. All of the above',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -391,7 +392,7 @@ if (showAdditionalText && widget.index == 14)
       child: Text(
         'D. All of the above',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -433,6 +434,7 @@ if (showAdditionalText && widget.index == 14)
           ],
         ],
       ),
+    ),
     );
   }
 }

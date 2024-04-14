@@ -58,7 +58,7 @@ class _InductiveReviewState extends State< InductiveReview> {
                   ),
                 ],
               ),
-              tileColor: Colors.orange[100 * (index % 9 + 1)],
+              tileColor: Colors.deepOrange[100 * (index % 9 + 1)],
             );
           },
         ),
@@ -188,20 +188,21 @@ class _QuestreviewState extends State<Questreview> {
       ],
     ),
   ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Center(
-              child: Text(
-                mainText,
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 23.0),
-              ),
+        body: SingleChildScrollView(
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(
+            child: Text(
+              mainText,
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 25.0),
             ),
           ),
+        ),      
           if (widget.index == 0 || widget.index == 1|| widget.index == 2 || widget.index == 3 || widget.index == 4 || widget.index == 5 || widget.index == 6 || widget.index == 7 || widget.index == 8 || widget.index == 9|| widget.index == 10|| widget.index == 11 || widget.index == 12 || widget.index == 13 || widget.index == 14 ) ...[
             ElevatedButton(
               onPressed: () {
@@ -240,7 +241,7 @@ if (showAdditionalText && widget.index == 2)
       child: Text(
         'C. Barre.\n\nExplanation: With 80% of individuals who practice Pilates also practicing yoga, the remaining 20% might prefer other forms of exercise. Barre is a fitness routine that complements yoga and Pilates, making it the most likely choice.',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -273,7 +274,7 @@ if (showAdditionalText && widget.index == 5)
       child: Text(
         'A. Comedy.\n\nExplanation: Given that 70% of individuals who enjoy action movies also enjoy thrillers, Juan is most likely to also enjoy comedy movies, which offer a different but similarly engaging viewing experience.',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -282,7 +283,7 @@ if (showAdditionalText && widget.index == 6)
     padding: const EdgeInsets.all(8.0),
     child: Center(
       child: Text(
-        'B. Americano.\n\nExplanation: With 75% of individuals who drink espresso also enjoying cappuccino, Juan is most likely to also drink Americano, as it\'s another popular espresso-based coffee choice.',
+       ' B. Motorcycle. \n\nExplanation: This is because motorcycles are often chosen by individuals who use bicycles due to their similar characteristics such as agility, fuel efficiency, and ease of maneuverability in urban areas. ',
         textAlign: TextAlign.center,
         style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
@@ -293,9 +294,10 @@ if (showAdditionalText && widget.index == 7)
     padding: const EdgeInsets.all(8.0),
     child: Center(
       child: Text(
-        'A. Mystery.\n\nExplanation: Since 70% of individuals who read science fiction novels also read fantasy novels, Maria is most likely to also read mystery novels, as they share similar appeal in terms of escapism and imaginative storytelling.',
+         'B. Americano.\n\nExplanation: With 75% of individuals who drink espresso also enjoying cappuccino, Juan is most likely to also drink Americano, as it\'s another popular espresso-based coffee choice.',
+       
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 19.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
     ),
   ),
@@ -304,7 +306,8 @@ if (showAdditionalText && widget.index == 8)
     padding: const EdgeInsets.all(8.0),
     child: Center(
       child: Text(
-        'C. Rock Climbing.\n\nExplanation: Considering that 65% of individuals who enjoy hiking also enjoy camping, Juan is most likely to also enjoy rock climbing, as it\'s a physically challenging outdoor activity that complements hiking.',
+         'A. Mystery.\n\nExplanation: Since 70% of individuals who read science fiction novels also read fantasy novels, Maria is most likely to also read mystery novels, as they share similar appeal in terms of escapism and imaginative storytelling.',
+       
         textAlign: TextAlign.center,
         style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
@@ -315,7 +318,8 @@ if (showAdditionalText && widget.index == 9)
     padding: const EdgeInsets.all(8.0),
     child: Center(
       child: Text(
-        'C. Blues.\n\nExplanation: With 70% of individuals who listen to classical music also listening to jazz, Maria is most likely to also enjoy blues music, as it shares similar elements of soulful melodies and improvisation.',
+         'C. Rock Climbing.\n\nExplanation: Considering that 65% of individuals who enjoy hiking also enjoy camping, Juan is most likely to also enjoy rock climbing, as it\'s a physically challenging outdoor activity that complements hiking.',
+       
         textAlign: TextAlign.center,
         style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
@@ -326,7 +330,8 @@ if (showAdditionalText && widget.index == 10)
     padding: const EdgeInsets.all(8.0),
     child: Center(
       child: Text(
-        'C. Leggings.\n\nExplanation: Given that 75% of individuals who wear skirts also wear dresses, Juan is most likely to also wear leggings, as they are a popular alternative for comfort and versatility.',
+         'C. Blues.\n\nExplanation: With 70% of individuals who listen to classical music also listening to jazz, Maria is most likely to also enjoy blues music, as it shares similar elements of soulful melodies and improvisation.',
+       
         textAlign: TextAlign.center,
         style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
@@ -337,7 +342,8 @@ if (showAdditionalText && widget.index == 11)
     padding: const EdgeInsets.all(8.0),
     child: Center(
       child: Text(
-        'B. Cupcakes.\n\nExplanation: Since 80% of individuals who bake cakes also bake cookies, Maria is most likely to also bake cupcakes, as they are another popular baked dessert choice that complements cookies.',
+         'C. Leggings.\n\nExplanation: Given that 75% of individuals who wear skirts also wear dresses, Juan is most likely to also wear leggings, as they are a popular alternative for comfort and versatility.',
+       
         textAlign: TextAlign.center,
         style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
@@ -348,7 +354,8 @@ if (showAdditionalText && widget.index == 12)
     padding: const EdgeInsets.all(8.0),
     child: Center(
       child: Text(
-        'A. Twitter.\n\nExplanation: With 70% of individuals who use Facebook also using Instagram, Juan is most likely to also use Twitter, as it\'s a widely popular alternative social media platform for microblogging and real-time updates.',
+         'B. Cupcakes.\n\nExplanation: Since 80% of individuals who bake cakes also bake cookies, Maria is most likely to also bake cupcakes, as they are another popular baked dessert choice that complements cookies.',
+     
         textAlign: TextAlign.center,
         style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
@@ -359,7 +366,8 @@ if (showAdditionalText && widget.index == 13)
     padding: const EdgeInsets.all(8.0),
     child: Center(
       child: Text(
-        'B. Italian.\n\nExplanation: Considering that 75% of individuals who speak Spanish also speak French, Maria is most likely to also speak Italian, as it\'s another Romance language closely related to French and Spanish.',
+           'A. Twitter.\n\nExplanation: With 70% of individuals who use Facebook also using Instagram, Juan is most likely to also use Twitter, as it\'s a widely popular alternative social media platform for microblogging and real-time updates.',
+    
         textAlign: TextAlign.center,
         style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
@@ -370,7 +378,7 @@ if (showAdditionalText && widget.index == 14)
     padding: const EdgeInsets.all(8.0),
     child: Center(
       child: Text(
-        'D. Mandarin.\n\nExplanation: Since 75% of individuals who speak Spanish also speak French, the remaining 25% might speak other languages. Mandarin, being one of the most spoken languages globally, is the most likely alternative among the options provided.',
+        'B. Italian.\n\nExplanation: Considering that 75% of individuals who speak Spanish also speak French, Maria is most likely to also speak Italian, as it\'s another Romance language closely related to French and Spanish.',
         textAlign: TextAlign.center,
         style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
       ),
@@ -414,6 +422,7 @@ if (showAdditionalText && widget.index == 14)
             ),
           ],
         ],
+      ),
       ),
     );
   }

@@ -188,20 +188,21 @@ class _QuestreviewState extends State<Questreview> {
       ],
     ),
   ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Center(
-              child: Text(
-                mainText,
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 25.0),
-              ),
+        body: SingleChildScrollView(
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(
+            child: Text(
+              mainText,
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 25.0),
             ),
           ),
+        ),      
           if (widget.index == 0 || widget.index == 1|| widget.index == 2 || widget.index == 3 || widget.index == 4 || widget.index == 5 || widget.index == 6 || widget.index == 7 || widget.index == 8 || widget.index == 9|| widget.index == 10|| widget.index == 11 || widget.index == 12 || widget.index == 13 || widget.index == 14 ) ...[
             ElevatedButton(
               onPressed: () {
@@ -414,6 +415,7 @@ style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
           ],
         ],
       ),
+        ),
     );
   }
 }
