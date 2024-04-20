@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 class LogicalReview extends StatefulWidget {
   final int index;
 
-LogicalReview({required this.index});
+  LogicalReview({required this.index});
 
   @override
   _LogicalReviewState createState() => _LogicalReviewState();
 }
 
-class  _LogicalReviewState extends State<LogicalReview> {
+class _LogicalReviewState extends State<LogicalReview> {
   bool showAdditionalText = false;
 
   @override
@@ -66,7 +66,6 @@ class  _LogicalReviewState extends State<LogicalReview> {
     );
   }
 }
-
 
 class Questreview extends StatefulWidget {
   final int index;
@@ -392,7 +391,7 @@ if (showAdditionalText && widget.index == 14)
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.grey, // Change background color
+                    backgroundColor:Color.fromARGB(255, 220, 216, 216), // Change background color
                     textStyle: TextStyle(color: Colors.white), // Change text color
                   ),
                   child: Text('Back', style: TextStyle(fontSize: 16)),
@@ -407,7 +406,7 @@ if (showAdditionalText && widget.index == 14)
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.grey, // Change background color
+                    backgroundColor: Color.fromARGB(255, 220, 216, 216), // Change background color
                     textStyle: TextStyle(color: Colors.white), // Change text color
                   ),
                   child: Text('Next', style: TextStyle(fontSize: 16)),

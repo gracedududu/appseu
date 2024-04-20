@@ -216,7 +216,7 @@ class _QuestreviewState extends State<Questreview> {
             child: Text(
               mainText,
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 25.0),
+              style: TextStyle(fontSize: 23.0),
             ),
           ),
         ),      
@@ -409,7 +409,7 @@ if (showAdditionalText && widget.index == 14)
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.grey, // Change background color
+                    backgroundColor:Color.fromARGB(255, 220, 216, 216),// Change background color
                     textStyle: TextStyle(color: Colors.white), // Change text color
                   ),
                   child: Text('Back', style: TextStyle(fontSize: 16)),
@@ -424,7 +424,7 @@ if (showAdditionalText && widget.index == 14)
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.grey, // Change background color
+                    backgroundColor: Color.fromARGB(255, 220, 216, 216),// Change background color
                     textStyle: TextStyle(color: Colors.white), // Change text color
                   ),
                   child: Text('Next', style: TextStyle(fontSize: 16)),

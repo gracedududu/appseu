@@ -7,7 +7,7 @@ class NavDrawerExample extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           Container(
-            color:   Color.fromARGB(255, 209, 209, 206),// Background color of the header
+            color:   Color.fromRGBO(150, 120, 85, 0.624),// Background color of the header
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 20.0),
               child: Row(
@@ -29,7 +29,7 @@ class NavDrawerExample extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
-                            color: Colors.black, // Color of the title text
+                            color: Color.fromARGB(255, 248, 247, 247), // Color of the title text
                           ),
                         ),
                         SizedBox(height: 4), // Adjust the height as needed
@@ -48,25 +48,28 @@ class NavDrawerExample extends StatelessWidget {
             ),
           ),
           ListTile(
-            title: Text('Favorites'),
+            leading: Icon(Icons.favorite_border), // Icon for Favorites
+            title: Text('Favorites', style: TextStyle(fontSize: 19)),
             onTap: () {
               Navigator.of(context).pop(); // Close the drawer
               Navigator.of(context).push(_NewPage(1));
             },
           ),
           ListTile(
-            title: Text('Result History'),
+            leading: Icon(Icons.history), // Icon for Result History
+            title: Text('Result History', style: TextStyle(fontSize: 19)),
             onTap: () {
               Navigator.of(context).pop(); // Close the drawer
               Navigator.of(context).push(_NewPage(2));
             },
           ),
           ListTile(
-            title: Text('About College Quest Review'),
+            leading: Icon(Icons.info_outline), // Icon for App Info
+            title: Text('About CQUERE', style: TextStyle(fontSize: 19)),
             onTap: () {
-               Navigator.of(context).pop(); // Close the drawer
+              Navigator.of(context).pop(); // Close the drawer
               Navigator.of(context).push(_NewPage(3));
-              // Add your logic here
+              // Add your logic 
             },
           ),
         ],
@@ -76,18 +79,67 @@ class NavDrawerExample extends StatelessWidget {
 }
 
 class _NewPage extends MaterialPageRoute<void> {
-  _NewPage(int id)
+  final int id;
+
+  _NewPage(this.id)
       : super(
-    builder: (BuildContext context) {
-      return Scaffold(
-        appBar: AppBar(
-          title: Text('Page $id'),
-          elevation: 1.0,
-        ),
-        body: Center(
-          child: Text('Page $id'),
-        ),
-      );
-    },
-  );
+          builder: (BuildContext context) {
+            String pageTitle;
+            if (id == 3) {
+              pageTitle = 'About CQUERE';
+            } else {
+              pageTitle = 'Page $id';
+            }
+            return Scaffold(
+              appBar: AppBar(
+                title: Text(pageTitle),
+                elevation: 1.0,
+              ),
+              body: Column(
+                children: [
+                  if (id == 3) // Conditionally render for page 3 only
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Image.asset(
+                                'lib/applogo 2.png',
+                                height: 200,
+                                width: 200,
+                              ),
+                              SizedBox(width: 16),
+                              Flexible(
+                                child: Text(
+                                  'COLLEGE QUEST\nREVIEW',
+                                  style: TextStyle(
+                                    fontSize: 25,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 8), // Add space between text and additional text
+                          Text(
+                            '\nWelcome to College Quest Review (CQUERE)!\n\nYour Ultimate College Entrance Companion\n\nAt CQUERE, we\'re dedicated to helping you ace your entrance exams and secure admission to your dream college. With personalized guidance, comprehensive study materials, and a supportive community, CQUERE empowers you to reach your academic goals with confidence and ease.', // Your additional text
+                            style: TextStyle(
+                              fontSize: 23,
+                              color: Color.fromARGB(255, 78, 77, 77),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  Expanded(
+                    child: Center(
+                      child: Container(),
+                    ),
+                  ),
+                ],
+              ),
+            );
+          },
+        );
 }

@@ -390,7 +390,7 @@ style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.grey, // Change background color
+                    backgroundColor: Color.fromARGB(255, 220, 216, 216), // Change background color
                     textStyle: TextStyle(color: Colors.white), // Change text color
                   ),
                   child: Text('Back', style: TextStyle(fontSize: 16)),
@@ -405,7 +405,7 @@ style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.grey, // Change background color
+                    backgroundColor: Color.fromARGB(255, 220, 216, 216), // Change background color
                     textStyle: TextStyle(color: Colors.white), // Change text color
                   ),
                   child: Text('Next', style: TextStyle(fontSize: 16)),

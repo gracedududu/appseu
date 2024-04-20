@@ -110,10 +110,10 @@ class _QuestreviewState extends State<Questreview> {
         'D.               Maria is not majoring in Economics.\n';
   } else if (widget.index == 5) {
     mainText = '${widget.index + 1}. If all students who are majoring in Computer Science must take Programming, and Juan is not taking Programming, which of the following must be true?\n\n'
-        'A.   Juan is not majoring in Computer Science.\n'
-        'B. Juan is proficient in programming.\n'
-        'C.         Juan\'s schedule conflicts with Programming.\n'
-        'D.         Juan is majoring in Computer Science.\n';
+        'A.    Juan is not majoring in Computer Science.\n'
+        'B.           Juan is proficient in programming.\n'
+        'C.  Juan\'s schedule conflicts\n with Programming.\n'
+        'D.             Juan is majoring in \nComputer Science.\n';
   } else if (widget.index == 6) {
     mainText = '${widget.index + 1}. If all students who take Physics must also take Mathematics, and Maria is not taking Mathematics, which of the following must be true?\n\n'
         'A.                Maria is not a student.\n'
@@ -124,7 +124,7 @@ class _QuestreviewState extends State<Questreview> {
     mainText = '${widget.index + 1}. If all students who major in Psychology must take a Statistics course, and John is not taking Statistics, which of the following must be true?\n\n'
         'A.                 John is not majoring in Psychology.\n'
         'B.    John is proficient in Statistics.\n'
-        'C.     John\'s schedule conflicts with Statistics.\n'
+        'C.             John\'s schedule conflicts with Statistics.\n'
         'D.  John is majoring in Psychology.\n';
   } else if (widget.index == 8) {
     mainText = '${widget.index + 1}. If all students who major in Chemistry must take a lab course, and Maria is not taking a lab course, which of the following must be true?\n\n'
@@ -134,10 +134,10 @@ class _QuestreviewState extends State<Questreview> {
         'D.                Maria is majoring \nin Chemistry.\n';
   } else if (widget.index == 9) {
     mainText = '${widget.index + 1}. If all students who major in Business Administration must take Accounting, and Juan is not taking Accounting, which of the following must be true?\n\n'
-        'A. Juan is not majoring in Business Administration.\n'
-        'B.  Juan is proficient in accounting.\n'
-        'C.     Juan\'s schedule conflicts with Accounting.\n'
-        'D.       Juan is majoring in Business Administration.\n';
+        'A.          Juan is not majoring in Business Administration.\n'
+        'B.               Juan is proficient in accounting.\n'
+        'C.      Juan\'s schedule conflicts\n with Accounting.\n'
+        'D.                Juan is majoring in \nBusiness Administration.\n';
   } else if (widget.index == 10) {
     mainText = '${widget.index + 1}. If all students who major in Literature must take a Creative Writing course, and Maria is not taking Creative Writing, which of the following must be true?\n\n'
         'A. Maria is not majoring\n in Literature.\n'
@@ -146,10 +146,10 @@ class _QuestreviewState extends State<Questreview> {
         'D.        Maria is majoring \nin Literature.\n';
   } else if (widget.index == 11) {
     mainText = '${widget.index + 1}. If all students who major in History must take a course on World War II, and John is not taking the World War II course, which of the following must be true?\n\n'
-        'A.      John is not majoring in History.\n'
+        'A.         John is not majoring in History.\n'
         'B.    John is proficient in World War II history.\n'
-        'C.  John\'s schedule conflicts with the World War II course.\n'
-        'D.             John is majoring in History.\n';
+        'C.      John\'s schedule conflicts \nwith the World War II course.\n'
+        'D.                John is majoring in History.\n';
   } else if (widget.index == 12) {
     mainText = '${widget.index + 1}. If all students who major in Environmental Science must take a course on Ecology, and Maria is not taking Ecology, which of the following must be true?\n\n'
         'A.             Maria is not majoring in Environmental Science.\n'
@@ -158,15 +158,15 @@ class _QuestreviewState extends State<Questreview> {
         'D.                   Maria is majoring in\n Environment Science.\n';
   } else if (widget.index == 13) {
     mainText = '${widget.index + 1}. If all students who major in Mathematics must take a course on Abstract Algebra, and Juan is not taking Abstract Algebra, which of the following must be true?\n\n'
-        'A.                 Juan is not majoring in Mathematics.\n'
-        'B.        Juan is proficient in abstract algebra.\n'
-        'C.      Juan\'s schedule conflicts with Abstract Algebra.\n'
-        'D. Juan is majoring in Mathematics.\n';
+        'A.    Juan is not majoring in Mathematics.\n'
+        'B.          Juan is proficient in abstract algebra.\n'
+        'C. Juan\'s schedule conflicts \nwith Abstract Algebra.\n'
+        'D.           Juan is majoring in Mathematics.\n';
   } else if (widget.index == 14) {
     mainText = '${widget.index + 1}. If all students who major in Sociology must take a course on Social Research Methods, and Maria is not taking Social Research Methods, which of the following must be true?\n\n'
-        'A. Maria is not majoring in Sociology.\n'
-        'B.              Maria is proficient in social research methods.\n'
-        'C.               Maria\'s schedule conflicts with Social Research Methods.\n'
+        'A.    Maria is not majoring \nin Sociology.\n'
+        'B.      Maria is proficient in \nsocial research methods.\n'
+        'C.             Maria\'s schedule conflicts with Social Research Methods.\n'
         'D.       Maria is majoring in Sociology.';
   } else {
     mainText = 'This is the ICT Test Review page.';
@@ -392,7 +392,7 @@ if (showAdditionalText && widget.index == 14)
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.grey, // Change background color
+                    backgroundColor: Color.fromARGB(255, 220, 216, 216), // Change background color
                     textStyle: TextStyle(color: Colors.white), // Change text color
                   ),
                   child: Text('Back', style: TextStyle(fontSize: 16)),
@@ -407,7 +407,7 @@ if (showAdditionalText && widget.index == 14)
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.grey, // Change background color
+                    backgroundColor: Color.fromARGB(255, 220, 216, 216),// Change background color
                     textStyle: TextStyle(color: Colors.white), // Change text color
                   ),
                   child: Text('Next', style: TextStyle(fontSize: 16)),

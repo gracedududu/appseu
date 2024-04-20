@@ -361,8 +361,8 @@ class _QuestreviewState extends State<Questreview> {
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 237, 234, 234), // Change background color
-                    textStyle: TextStyle(color: const Color.fromARGB(255, 255, 251, 251)), // Change text color
+                    backgroundColor: Color.fromARGB(255, 220, 216, 216),// Change background color
+                    textStyle: TextStyle(color: Color.fromARGB(255, 186, 146, 146)), // Change text color
                   ),
                   child: Text('Next ', style: TextStyle(fontSize: 16)),
                 

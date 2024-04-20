@@ -412,7 +412,7 @@ class _QuestreviewState extends State<Questreview> {
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.grey,
+                    backgroundColor: Color.fromARGB(255, 220, 216, 216),
                     textStyle: TextStyle(color: Colors.white),
                   ),
                   child: Text('Back', style: TextStyle(fontSize: 16)),
@@ -427,7 +427,7 @@ class _QuestreviewState extends State<Questreview> {
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.grey,
+                    backgroundColor: Color.fromARGB(255, 220, 216, 216),
                     textStyle: TextStyle(color: Colors.white),
                   ),
                   child: Text('Next', style: TextStyle(fontSize: 16)),

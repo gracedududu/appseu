@@ -36,11 +36,11 @@ class _MyHomePageState extends State<MyHomePage> {
           SizedBox(height: 8.5),
           Container(
             decoration: BoxDecoration(
-              color:  Color.fromARGB(255, 231, 231, 227),
+              color:  Color.fromRGBO(255, 255, 254, 0.801),
               borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(
-                  color: Color.fromARGB(255, 120, 119, 117).withOpacity(0.4),
+                  color: Color.fromRGBO(216, 216, 214, 0.843).withOpacity(0.6),
                   spreadRadius: 5,
                   blurRadius: 7,
                   offset: Offset(0, 3),
@@ -58,9 +58,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Text(
                     'Hi! let us review',
                     style: TextStyle(
-                      fontSize: 22.5,
+                      fontSize: 23,
                       fontWeight: FontWeight.bold,
-                      color: Colors.black,
+                      color: Color.fromRGBO(101, 85, 58, 0.945),
                     ),
                   ),
                 ),
@@ -79,9 +79,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   top: 0,
                   right: 0,
                   child: Image.asset(
-                    'lib/hi 2.png',
-                    height: 120, // Specify the height of the image
-                    width: 160, // Specify the width of the image
+                    'lib/hello 1.png',
+                    height: 115.5, // Specify the height of the image
+                    width: 180, // Specify the width of the image
                   ),
                 ),
               ],
@@ -105,6 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
+                  color: Color.fromRGBO(101, 85, 58, 0.945),
                 ),
               ),
               SizedBox(width: 30),
