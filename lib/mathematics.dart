@@ -42,7 +42,7 @@ class _MathematicsReviewState extends State<MathematicsReview> {
                   Expanded(
                     child: Text(
                       ' General Mathematics Test #${index + 1}',
-                      style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,),
+                      style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,),
                     ),
                   ),
                   ElevatedButton(
@@ -205,11 +205,12 @@ class _QuestreviewState extends State<Questreview> {
     }
     return Scaffold(
       appBar: AppBar(
+         backgroundColor:  Color.fromRGBO(171, 147, 112, 1),
        title: Row(
       children: [
         Text(
           ' General Mathematics Test',
-          style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
+          style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18.5),
         ),
         SizedBox(width: 10), // Add some space between the text and image
         Image.asset(

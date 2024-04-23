@@ -42,7 +42,7 @@ class  _Critical_thinkingReviewState extends State<Critical_thinkingReview> {
                   Expanded(
                     child: Text(
                       'Critical Thinking Test #${index + 1}',
-                      style: TextStyle(fontSize: 19,fontWeight: FontWeight.bold,),
+                      style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold,),
                     ),
                   ),
                   ElevatedButton(
@@ -82,119 +82,120 @@ class _QuestreviewState extends State<Questreview> {
   String mainText = '';
   if (widget.index == 0) {
   mainText = '\n${widget.index + 1}. Logical Reasoning:\n'
-      'In a room, there are 10 people. Each person shakes hands with every other person exactly once. How many handshakes occur in total?\n'
+      'In a room, there are 10 people. Each person shakes hands with every other person exactly once. How many handshakes occur in total?\n\n'
       'A. 45\n'
       'B. 55\n'
       'C. 65\n'
       'D. 90\n';
 } else if (widget.index == 1) {
   mainText = '\n${widget.index + 1}. Mathematical Problem Solving:\n'
-      'If a train leaves Manila traveling at 60 km/h and another train leaves Cebu traveling at 80 km/h, how long will it take for the trains to be 500 km apart?\n'
+      'If a train leaves Manila traveling at 60 km/h and another train leaves Cebu traveling at 80 km/h, how long will it take for the trains to be 500 km apart?\n\n'
       'A. 3 hours\n'
       'B. 4 hours\n'
       'C. 5 hours\n'
       'D. 6 hours\n';
 } else if (widget.index == 2) {
   mainText = '\n${widget.index + 1}. Verbal Reasoning:\n'
-      'Analyze the following statement: "Success is the sum of small efforts, repeated day in and day out." Discuss its implications in the context of personal growth and achievement.\n'
+      'Analyze the following statement: "Success is the sum of small efforts, repeated day in and day out." Discuss its implications in the context of personal growth and achievement.\n\n'
       'A.  It emphasizes the importance of consistency and perseverance.\n'
       'B. It suggests that success is solely dependent on individual efforts.\n'
-      'C.       It highlights the role of luck in achieving success.\n'
-      'D.      It promotes the idea of instant gratification.\n';
+      'C. It highlights the role of luck in achieving success.\n'
+      'D. It promotes the idea of instant gratification.\n';
 } else if (widget.index == 3) {
   mainText = '\n${widget.index + 1}. Deduction:\n'
-      'Statement 1: All mammals have hair. \nStatement 2: Elephants are mammals.\n Based on the above statements, which of the following conclusions can be logically deduced?\n'
+      'Statement 1: All mammals have hair. \nStatement 2: Elephants are mammals.\n Based on the above statements, which of the following conclusions can be logically deduced?\n\n'
       'A.     Elephants are the\n only mammals with hair.\n'
       'B.         All animals with\n hair are mammals.\n'
       'C.  Elephants have hair.\n'
       'D.   Some mammals do \nnot have hair.\n';
 } else if (widget.index == 4) {
   mainText = '\n${widget.index + 1}. Critical Reading:\n'
-      'Read a passage on a complex socio-political issue and identify the author\'s argument, assumptions, and supporting evidence. Evaluate the strength of the argument and propose alternative perspectives.\n'
+      'Read a passage on a complex socio-political issue and identify the author\'s argument, assumptions, and supporting evidence. Evaluate the strength of the argument and propose alternative perspectives.\n\n'
       'A.  The argument is well-supported and logically sound.\n'
-      'B.        The assumptions are flawed and weaken the argument.\n'
-      'C. The evidence provided is insufficient to support the argument.\n'
-      'D. Alternative perspectives are irrelevant to the issue at hand.\n';
+      'B.  The assumptions are flawed and weaken the argument.\n'
+      'C.  The evidence provided is insufficient to support the argument.\n'
+      'D.  Alternative perspectives are irrelevant to the issue at hand.\n';
 } else if (widget.index == 5) {
   mainText = '\n${widget.index + 1}. Scientific Reasoning:\n'
-      'Explain the process of photosynthesis in plants and discuss its ecological significance. How might climate change impact this process and what are the potential consequences?\n'
+      'Explain the process of photosynthesis in plants and discuss its ecological significance. How might climate change impact this process and what are the potential consequences?\n\n'
       'A. Photosynthesis produces oxygen and glucose, supporting life on Earth.\n'
-      'B. Climate change may alter temperature and precipitation patterns, affecting plant growth.\n'
-      'C.    Increased carbon dioxide levels can enhance photosynthesis rates.\n'
+      'B.  Climate change may alter temperature and precipitation patterns, affecting plant growth.\n'
+      'C.  Increased carbon dioxide levels can enhance photosynthesis rates.\n'
       'D. All of the above\n';
 } else if (widget.index == 6) {
   mainText = '\n${widget.index + 1}. Ethical Dilemma:\n'
-      'You witness a friend cheating during an exam. Discuss the ethical implications of reporting or not reporting this behavior, considering the potential consequences for both your friend and the academic community.\n'
-      'A.             Reporting the cheating ensures academic integrity but may harm your relationship with your friend.\n'
-      'B.     Not reporting the cheating protects your friendship but compromises academic honesty.\n'
+      'You witness a friend cheating during an exam. Discuss the ethical implications of reporting or not reporting this behavior, considering the potential consequences for both your friend and the academic community.\n\n'
+      'A. Reporting the cheating ensures academic integrity but may harm your relationship with your friend.\n'
+      'B. Not reporting the cheating protects your friendship but compromises academic honesty.\n'
       'C. Both options have ethical implications and potential consequences.\n'
-      'D.   It is not your responsibility to address your friend\'s behavior.\n';
+      'D. It is not your responsibility to address your friend\'s behavior.\n';
 } else if (widget.index == 7) {
   mainText = '\n${widget.index + 1}. Creative Problem Solving:\n'
-      'Design an innovative solution to address traffic congestion in urban areas, considering factors such as sustainability, efficiency, and public safety.\n'
-      'A.     Implementing a comprehensive\n public transportation system\n'
-      'B.           Encouraging carpooling and ridesharing programs\n'
+      'Design an innovative solution to address traffic congestion in urban areas, considering factors such as sustainability, efficiency, and public safety.\n\n'
+      'A. Implementing a comprehensive\n public transportation system\n'
+      'B. Encouraging carpooling and ridesharing programs\n'
       'C. Promoting cycling and pedestrian-friendly infrastructure\n'
       'D. All of the above\n';
 } else if (widget.index == 8) {
   mainText = '\n${widget.index + 1}. Historical Analysis:\n'
-      'Analyze a historical event, such as the People Power Revolution in the Philippines, and discuss its significance in shaping the country\'s political landscape and promoting democracy.\n'
+      'Analyze a historical event, such as the People Power Revolution in the Philippines, and discuss its significance in shaping the country\'s political landscape and promoting democracy.\n\n'
       'A. It led to the ousting of a dictator and restored democratic governance.\n'
-      'B.       It inspired similar movements for democracy in other countries.\n'
+      'B. It inspired similar movements for democracy in other countries.\n'
       'C. It highlighted the power of nonviolent resistance in effecting political change.\n'
       'D. All of the above\n';
 } else if (widget.index == 9) {
   mainText = '\n${widget.index + 1}. Economic Inquiry:\n'
-      'Evaluate the impact of globalization on the Philippine economy. Discuss the opportunities and challenges it presents for various sectors, including agriculture, manufacturing, and services.\n'
-      'A.         Globalization facilitates trade and investment, driving economic growth.\n'
-      'B.       It can lead to job displacement and income inequality.\n'
+      'Evaluate the impact of globalization on the Philippine economy. Discuss the opportunities and challenges it presents for various sectors, including agriculture, manufacturing, and services.\n\n'
+      'A. Globalization facilitates trade and investment, driving economic growth.\n'
+      'B. It can lead to job displacement and income inequality.\n'
       'C. Export-oriented industries may benefit from access to international markets.\n'
       'D. All of the above\n';
 } else if (widget.index == 10) {
   mainText = '\n${widget.index + 1}. Cultural Critique:\n'
-      'Critically assess the portrayal of Filipino culture in mainstream media. Discuss stereotypes, cultural appropriation, and the role of media in shaping perceptions of Filipino identity.\n'
-      'A.     Mainstream media accurately represents the diversity and complexity of Filipino culture.\n'
+      'Critically assess the portrayal of Filipino culture in mainstream media. Discuss stereotypes, cultural appropriation, and the role of media in shaping perceptions of Filipino identity.\n\n'
+      'A. Mainstream media accurately represents the diversity and complexity of Filipino culture.\n'
       'B. Stereotypical portrayals reinforce harmful biases and limit cultural understanding.\n'
-      'C.   Cultural appropriation in media undermines the authenticity of Filipino traditions.\n'
+      'C. Cultural appropriation in media undermines the authenticity of Filipino traditions.\n'
       'D. All of the above\n';
 } else if (widget.index == 11) {
   mainText = '\n${widget.index + 1}. Environmental Ethics:\n'
-      'Debate the ethical considerations surrounding mining activities in the Philippines. Discuss the balance between economic development and environmental conservation, considering the rights of indigenous communities and long-term sustainability.\n'
-      'A.      Mining generates revenue and employment opportunities, benefiting the economy.\n'
-      'B.           It can lead to environmental degradation and loss of biodiversity.\n'
+      'Debate the ethical considerations surrounding mining activities in the Philippines. Discuss the balance between economic development and environmental conservation, considering the rights of indigenous communities and long-term sustainability.\n\n'
+      'A. Mining generates revenue and employment opportunities, benefiting the economy.\n'
+      'B. It can lead to environmental degradation and loss of biodiversity.\n'
       'C. Indigenous communities are often marginalized and displaced by mining operations.\n'
       'D. All of the above\n';
 } else if (widget.index == 12) {
   mainText = '\n${widget.index + 1}. Geopolitical Analysis:\n'
-      'Analyze the territorial disputes in the South China Sea and discuss the implications for regional stability, international relations, and maritime security.\n'
+      'Analyze the territorial disputes in the South China Sea and discuss the implications for regional stability, international relations, and maritime security.\n\n'
       'A. Territorial disputes escalate \ntensions and undermine diplomatic efforts.\n'
-      'B.        Competing claims raise \nconcerns about freedom of navigation and access to resources.\n'
-      'C.                    International law\n and multilateral negotiations are essential for resolving conflicts.\n'
+      'B. Competing claims raise \nconcerns about freedom of navigation and access to resources.\n'
+      'C. International law\n and multilateral negotiations are essential for resolving conflicts.\n'
       'D. All of the above\n';
 } else if (widget.index == 13) {
   mainText = '\n${widget.index + 1}. Philosophical Inquiry:\n'
-      'Discuss the concept of justice in Filipino society. How do cultural values, historical context, and socioeconomic factors influence perceptions of justice and fairness?\n'
+      'Discuss the concept of justice in Filipino society. How do cultural values, historical context, and socioeconomic factors influence perceptions of justice and fairness?\n\n'
       'A. Justice is inherently subjective and varies across cultures and contexts.\n'
       'B. Cultural values such as pakikisama and hiya influence notions of right and wrong.\n'
-      'C.       Socioeconomic disparities can \naffect access to legal rights and remedies.\n'
+      'C. Socioeconomic disparities can \naffect access to legal rights and remedies.\n'
       'D. All of the above\n';
 } else if (widget.index == 14) {
   mainText = '\n${widget.index + 1}. Interdisciplinary Problem:\n'
-      'Propose a multidisciplinary approach to address a pressing social issue in the Philippines, such as poverty or public health. Consider the contributions of fields such as economics, sociology, public policy, and healthcare in formulating a comprehensive solution.\n'
+      'Propose a multidisciplinary approach to address a pressing social issue in the Philippines, such as poverty or public health. Consider the contributions of fields such as economics, sociology, public policy, and healthcare in formulating a comprehensive solution.\n\n'
       'A. Implementing social welfare programs \nto alleviate poverty and improve access to education and healthcare\n'
-      'B.               Promoting community-based initiatives and empowering marginalized groups\n'
-      'C.                Strengthening public-private partnerships for sustainable development\n'
+      'B. Promoting community-based initiatives and empowering marginalized groups\n'
+      'C. Strengthening public-private partnerships for sustainable development\n'
       'D. All of the above\n';
 } else {
   mainText = 'This is the College Quest Review page.';
 }
     return Scaffold(
       appBar: AppBar(
+         backgroundColor:  Color.fromRGBO(171, 147, 112, 1),
        title: Row(
       children: [
         Text(
           ' Critical Thinking Test',
-          style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22.5),
+          style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20.5),
         ),
         SizedBox(width: 10), // Add some space between the text and image
         Image.asset(

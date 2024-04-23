@@ -42,7 +42,7 @@ class _DeductiveReviewState extends State< DeductiveReview> {
                   Expanded(
                     child: Text(
                       ' Deductive Reasoning Test #${index + 1}',
-                      style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,),
+                      style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,),
                     ),
                   ),
                   ElevatedButton(
@@ -86,10 +86,10 @@ class _QuestreviewState extends State<Questreview> {
         'D.      Maria\'s class schedule \nconflicts with Calculus.\n';
   } else if (widget.index == 1) {
     mainText = '${widget.index + 1}. If all students who take Chemistry are also required to take Biology, and John is not taking Biology, which of the following must be true?\n\n'
-        'A.  John is not taking Chemistry.\n'
-        'B.               John is not a student.\n'
-        'C.         John is taking Chemistry.\n'
-        'D.John\'s schedule conflicts with Biology.\n';
+        'A.      John is not taking \nChemistry.\n'
+        'B.               John is not a \nstudent.\n'
+        'C.            John is taking \nChemistry.\n'
+        'D.        John\'s schedule \nconflicts with Biology.\n';
   } else if (widget.index == 2) {
     mainText = '${widget.index + 1}. If all students in the Engineering program are required to take Physics, and Maria is not taking Physics, which of the following must be true?\n\n'
         'A.                 Maria is not in the \nEngineering program.\n'
@@ -98,34 +98,34 @@ class _QuestreviewState extends State<Questreview> {
         'D.                   Maria\'s schedule\n conflicts with Physics.\n';
   } else if (widget.index == 3) {
     mainText = '${widget.index + 1}. If all students who are proficient in English are required to take a literature course, and Juan is taking a literature course, which of the following must be true?\n\n'
-        'A.    Juan is proficient in English.\n'
-        'B.            Juan is not proficient in English.\n'
-        'C.         Juan is a literature major.\n'
-        'D. Juan\'s schedule conflicts with English.\n';
+        'A.         Juan is proficient in \nEnglish.\n'
+        'B.    Juan is not proficient in English.\n'
+        'C.  Juan is a literature major.\n'
+        'D. Juan\'s schedule conflicts \nwith English.\n';
   } else if (widget.index == 4) {
     mainText = '${widget.index + 1}. If all students who major in Economics are required to take Microeconomics, and Maria is not taking Microeconomics, which of the following must be true?\n\n'
-        'A.                  Maria is not a student.\n'
-        'B. Maria is majoring in Economics.\n'
-        'C.   Maria\'s schedule conflicts with Microeconomics.\n'
-        'D.               Maria is not majoring in Economics.\n';
+        'A.           Maria is not \na student.\n'
+        'B. Maria is majoring \nin Economics.\n'
+        'C.   Maria\'s schedule \nconflicts\n with Microeconomics.\n'
+        'D.           Maria is not\n majoring in Economics.\n';
   } else if (widget.index == 5) {
     mainText = '${widget.index + 1}. If all students who are majoring in Computer Science must take Programming, and Juan is not taking Programming, which of the following must be true?\n\n'
-        'A.    Juan is not majoring in Computer Science.\n'
+        'A.      Juan is not majoring in Computer Science.\n'
         'B.           Juan is proficient in programming.\n'
         'C.  Juan\'s schedule conflicts\n with Programming.\n'
         'D.             Juan is majoring in \nComputer Science.\n';
   } else if (widget.index == 6) {
     mainText = '${widget.index + 1}. If all students who take Physics must also take Mathematics, and Maria is not taking Mathematics, which of the following must be true?\n\n'
-        'A.                Maria is not a student.\n'
-        'B.       Maria is not taking Physics.\n'
-        'C.  Maria\'s schedule conflicts with Mathematics.\n'
-        'D.              Maria is taking Physics.\n';
+        'A.     Maria is not a \nstudent.\n'
+        'B.          Maria is not \ntaking Physics.\n'
+        'C.  Maria\'s schedule \nconflicts with Mathematics.\n'
+        'D.    Maria is taking \nPhysics.\n';
   } else if (widget.index == 7) {
     mainText = '${widget.index + 1}. If all students who major in Psychology must take a Statistics course, and John is not taking Statistics, which of the following must be true?\n\n'
-        'A.                 John is not majoring in Psychology.\n'
-        'B.    John is proficient in Statistics.\n'
-        'C.             John\'s schedule conflicts with Statistics.\n'
-        'D.  John is majoring in Psychology.\n';
+        'A.              John is not \nmajoring in Psychology.\n'
+        'B.    John is proficient\n in Statistics.\n'
+        'C.       John\'s schedule\n conflicts with Statistics.\n'
+        'D.     John is majoring \nin Psychology.\n';
   } else if (widget.index == 8) {
     mainText = '${widget.index + 1}. If all students who major in Chemistry must take a lab course, and Maria is not taking a lab course, which of the following must be true?\n\n'
         'A.         Maria is not majoring\n in Chemistry.\n'
@@ -134,10 +134,10 @@ class _QuestreviewState extends State<Questreview> {
         'D.                Maria is majoring \nin Chemistry.\n';
   } else if (widget.index == 9) {
     mainText = '${widget.index + 1}. If all students who major in Business Administration must take Accounting, and Juan is not taking Accounting, which of the following must be true?\n\n'
-        'A.          Juan is not majoring in Business Administration.\n'
-        'B.               Juan is proficient in accounting.\n'
-        'C.      Juan\'s schedule conflicts\n with Accounting.\n'
-        'D.                Juan is majoring in \nBusiness Administration.\n';
+        'A.    Juan is not majoring in Business Administration.\n'
+        'B.           Juan is proficient in accounting.\n'
+        'C.  Juan\'s schedule conflicts\n with Accounting.\n'
+        'D.             Juan is majoring in \nBusiness Administration.\n';
   } else if (widget.index == 10) {
     mainText = '${widget.index + 1}. If all students who major in Literature must take a Creative Writing course, and Maria is not taking Creative Writing, which of the following must be true?\n\n'
         'A. Maria is not majoring\n in Literature.\n'
@@ -147,15 +147,15 @@ class _QuestreviewState extends State<Questreview> {
   } else if (widget.index == 11) {
     mainText = '${widget.index + 1}. If all students who major in History must take a course on World War II, and John is not taking the World War II course, which of the following must be true?\n\n'
         'A.         John is not majoring in History.\n'
-        'B.    John is proficient in World War II history.\n'
+        'B.    John is proficient in World\n War II history.\n'
         'C.      John\'s schedule conflicts \nwith the World War II course.\n'
         'D.                John is majoring in History.\n';
   } else if (widget.index == 12) {
     mainText = '${widget.index + 1}. If all students who major in Environmental Science must take a course on Ecology, and Maria is not taking Ecology, which of the following must be true?\n\n'
-        'A.             Maria is not majoring in Environmental Science.\n'
-        'B.   Maria is proficient in ecology.\n'
-        'C.         Maria\'s schedule conflicts\n with Ecology.\n'
-        'D.                   Maria is majoring in\n Environment Science.\n';
+        'A.  Maria is not majoring \nin Environmental Science.\n'
+        'B.    Maria is proficient in\n ecology.\n'
+        'C.           Maria\'s schedule \nconflicts with Ecology.\n'
+        'D.      Maria is majoring in\n Environment Science.\n';
   } else if (widget.index == 13) {
     mainText = '${widget.index + 1}. If all students who major in Mathematics must take a course on Abstract Algebra, and Juan is not taking Abstract Algebra, which of the following must be true?\n\n'
         'A.    Juan is not majoring in Mathematics.\n'
@@ -164,26 +164,27 @@ class _QuestreviewState extends State<Questreview> {
         'D.           Juan is majoring in Mathematics.\n';
   } else if (widget.index == 14) {
     mainText = '${widget.index + 1}. If all students who major in Sociology must take a course on Social Research Methods, and Maria is not taking Social Research Methods, which of the following must be true?\n\n'
-        'A.    Maria is not majoring \nin Sociology.\n'
-        'B.      Maria is proficient in \nsocial research methods.\n'
-        'C.             Maria\'s schedule conflicts with Social Research Methods.\n'
-        'D.       Maria is majoring in Sociology.';
+        'A.       Maria is not majoring \nin Sociology.\n'
+        'B.          Maria is proficient in \nsocial research methods.\n'
+        'C. Maria\'s schedule conflicts \nwith Social Research Methods.\n'
+        'D.           Maria is majoring in Sociology.';
   } else {
     mainText = 'This is the ICT Test Review page.';
   }
     return Scaffold(
       appBar: AppBar(
+         backgroundColor:  Color.fromRGBO(171, 147, 112, 1),
        title: Row(
       children: [
         Text(
           ' Deductive Reasoning Test',
-          style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
+          style: TextStyle(fontWeight: FontWeight.bold,fontSize: 19),
         ),
         SizedBox(width: 10), // Add some space between the text and image
         Image.asset(
         'lib/book 4.png',
           height: 70, // Specify the height of the image
-          width: 60, // Specify the width of the image
+          width: 55, // Specify the width of the image
         ),
       ],
     ),
@@ -200,7 +201,7 @@ class _QuestreviewState extends State<Questreview> {
             child: Text(
               mainText,
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 25.0),
+              style: TextStyle(fontSize: 23.0),
             ),
           ),
         ),      

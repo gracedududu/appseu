@@ -47,8 +47,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ],
             ),
-            height: 125,
-            width: 370,
+            height: 120,
+            width: 365,
             child: Stack(
               alignment: Alignment.bottomLeft,
               children: [
@@ -80,14 +80,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   right: 0,
                   child: Image.asset(
                     'lib/hello 1.png',
-                    height: 115.5, // Specify the height of the image
+                    height: 110, // Specify the height of the image
                     width: 180, // Specify the width of the image
                   ),
                 ),
               ],
             ),
           ),
-          SizedBox(height: 30),
+          SizedBox(height: 16),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -119,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ],
           ),
-          SizedBox(height: 20),
+          SizedBox(height: 18),
           if (!isSecondPageVisible) _buildFirstPageContent(),
           if (isSecondPageVisible) _buildSecondPage(),
         ],

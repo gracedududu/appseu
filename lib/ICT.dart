@@ -42,7 +42,7 @@ class _ICTReviewState extends State<ICTReview> {
                   Expanded(
                     child: Text(
                       ' Information Technology Test #${index + 1}',
-                      style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold,),
+                      style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,),
                     ),
                   ),
                   ElevatedButton(
@@ -173,11 +173,12 @@ class _QuestreviewState extends State<Questreview> {
     }
     return Scaffold(
       appBar: AppBar(
+        backgroundColor:  Color.fromRGBO(171, 147, 112, 1),
        title: Row(
       children: [
         Text(
           ' Information Technology Test',
-          style: TextStyle(fontWeight: FontWeight.bold,fontSize: 19),
+          style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17),
         ),
         SizedBox(width: 10), // Add some space between the text and image
         Image.asset(

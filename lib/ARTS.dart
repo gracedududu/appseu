@@ -42,7 +42,7 @@ class _ArtsReviewState extends State<ArtsReview> {
                   Expanded(
                     child: Text(
                       'Arts & Humanities Review #${index + 1}',
-                      style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,),
+                      style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,),
                     ),
                   ),
                   ElevatedButton(
@@ -175,6 +175,7 @@ class _QuestreviewState extends State<Questreview> {
     }
     return Scaffold(
       appBar: AppBar(
+         backgroundColor:  Color.fromRGBO(171, 147, 112, 1),
         title: Row(
           children: [
             Text(

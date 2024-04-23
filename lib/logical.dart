@@ -174,6 +174,7 @@ class _QuestreviewState extends State<Questreview> {
   }
     return Scaffold(
       appBar: AppBar(
+         backgroundColor:  Color.fromRGBO(171, 147, 112, 1),
        title: Row(
       children: [
         Text(

@@ -39,7 +39,7 @@ class _LogicalreasoningReviewState extends State<LogicalreasoningReview> {
                   Expanded(
                     child: Text(
                       'Abstract Reasoning Test #${index + 1}',
-                      style: TextStyle(fontSize: 19,fontWeight: FontWeight.bold,),
+                      style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,),
                     ),
                   ),
                   ElevatedButton(
@@ -111,6 +111,7 @@ class _QuestreviewState extends State<Questreview> {
     } 
     return Scaffold(
       appBar: AppBar(
+         backgroundColor:  Color.fromRGBO(171, 147, 112, 1),
         title: Row(
           children: [
             Text(

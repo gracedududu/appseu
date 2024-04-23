@@ -40,7 +40,7 @@ class _NumericalReviewState extends State< NumericalReview> {
                   Expanded(
                     child: Text(
                       'Numerical Reasoning Test #${index + 1}',
-                      style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,),
+                      style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,),
                     ),
                   ),
                   ElevatedButton(
@@ -112,16 +112,17 @@ class _QuestreviewState extends State<Questreview> {
     } 
     return Scaffold(
       appBar: AppBar(
+         backgroundColor:  Color.fromRGBO(171, 147, 112, 1),
         title: Row(
           children: [
             Text(
               'Numerical Reasoning Test',
-              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
+              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 19),
             ),
              SizedBox(width: 10), // Add some space between the text and image
             Image.asset(
               'lib/book 3.png',
-              height: 50, // Specify the height of the image
+              height: 40, // Specify the height of the image
               width: 35, // Specify the width of the image
             ),
           ],
