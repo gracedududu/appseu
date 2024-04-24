@@ -178,7 +178,7 @@ class _QuestreviewState extends State<Questreview> {
       children: [
         Text(
           ' Deductive Reasoning Test',
-          style: TextStyle(fontWeight: FontWeight.bold,fontSize: 19),
+          style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17.5),
         ),
         SizedBox(width: 10), // Add some space between the text and image
         Image.asset(

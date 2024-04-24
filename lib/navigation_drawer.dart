@@ -129,9 +129,9 @@ class _NewPage extends MaterialPageRoute<void> {
                           ),
                           SizedBox(height: 8), // Add space between text and additional text
                           Text(
-                            '\nWelcome to College Quest Review (CQUERE)!\n\nYour Ultimate College Entrance Companion\n\nAt CQUERE, we\'re dedicated to helping you ace your entrance exams and secure admission to your dream college. With personalized guidance, comprehensive study materials, and a supportive community, CQUERE empowers you to reach your academic goals with confidence and ease.', // Your additional text
+                            'Welcome to College Quest Review (CQUERE)!\n\nYour Ultimate College Entrance Companion\n\nAt CQUERE, we\'re dedicated to helping you ace your entrance exams and secure admission to your dream college. With personalized guidance, comprehensive study materials, and a supportive community, CQUERE empowers you to reach your academic goals with confidence and ease.', // Your additional text
                             style: TextStyle(
-                              fontSize: 20.5,
+                              fontSize: 18.5,
                               color:  Color.fromRGBO(110, 94, 69, 1),
                             ),
                           ),
@@ -180,7 +180,7 @@ class _NewPage extends MaterialPageRoute<void> {
                             ),
                           ),
                         ),
-                        SizedBox(height: 40),
+                        SizedBox(height: 25.5),
                         Container(
                           margin: EdgeInsets.symmetric(horizontal: 10),
                           height: 400,

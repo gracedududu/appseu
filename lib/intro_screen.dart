@@ -38,11 +38,17 @@ class IntroScreen extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => MyHomePage()),
                 );
               },
-              child: Text('Let\'s Learn'),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Color.fromRGBO(255, 255, 254, 0.801), // Change background color
-                textStyle: TextStyle(color: Color.fromARGB(255, 70, 68, 68)),
-              ),
+              child: Text(
+    'Let\'s Learn',
+    style: TextStyle(
+      
+      color: Color.fromARGB(212, 95, 83, 42),
+      fontWeight: FontWeight.bold, // Change text color here
+    ),
+  ),
+  style: ElevatedButton.styleFrom(
+    
+    backgroundColor: Color.fromRGBO(255, 255, 254, 0.801)),
             ),
           ],
         ),

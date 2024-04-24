@@ -180,7 +180,7 @@ class _QuestreviewState extends State<Questreview> {
           children: [
             Text(
               'Arts & Humanities Review',
-              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
+              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),
             ),
             SizedBox(width: 10), // Add some space between the text and image
             Image.asset(

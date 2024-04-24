@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Column(
         children: [
-          SizedBox(height: 8.5),
+          SizedBox(height: 3),
           Container(
             decoration: BoxDecoration(
               color:  Color.fromRGBO(255, 255, 254, 0.801),
@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
             height: 120,
-            width: 365,
+            width: 340,
             child: Stack(
               alignment: Alignment.bottomLeft,
               children: [
@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Text(
                     'Hi! let us review',
                     style: TextStyle(
-                      fontSize: 23,
+                      fontSize: 22.5,
                       fontWeight: FontWeight.bold,
                       color: Color.fromRGBO(101, 85, 58, 0.945),
                     ),
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Text(
                     'This is your path to excelling in Entrance Exams!',
                     style: TextStyle(
-                      fontSize: 15,
+                      fontSize: 13.9,
                       color: Colors.black,
                     ),
                   ),
@@ -87,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
           ),
-          SizedBox(height: 16),
+          SizedBox(height: 8.5),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -119,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ],
           ),
-          SizedBox(height: 18),
+          SizedBox(height: 8.5),
           if (!isSecondPageVisible) _buildFirstPageContent(),
           if (isSecondPageVisible) _buildSecondPage(),
         ],
